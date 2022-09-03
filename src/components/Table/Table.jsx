@@ -3,7 +3,7 @@ import { useState } from 'react';
 import mockData from './mocks';
 import useTable from '../../hooks/useTable';
 import { format, parse } from 'date-fns';
-import { FiArrowLeftCircle, FiArrowRightCircle, FiTrash, FiUserPlus } from "react-icons/fi";
+import { FiArrowLeftCircle, FiArrowRightCircle, FiTrash } from "react-icons/fi";
 
 const pageSizeOptions = [
     {

@@ -13,7 +13,8 @@ const useTable = ({ columns, data, pagination }) => {
     ), [columns]);
 
     useEffect(() => {
-        if (currentPageIndex >= totalPages) setCurrentPageIndex(totalPages-1);
+        if (currentPageIndex > totalPages-1) setCurrentPageIndex(totalPages-1);
+        if(currentPageIndex < 0 && totalPages !== 0) setCurrentPageIndex(0);
     }, [currentPageIndex, totalPages]);
 
     const slicedRows = useMemo(() => (
