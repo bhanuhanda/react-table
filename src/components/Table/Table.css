@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+  margin: 1.5rem;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-container {
+  font-size: 1.3rem;
+  border-collapse: collapse;
+}
+
+.table-container td, th {
+  padding: 0.5rem;
+  border: 1px #000 solid;
+}
+
+.pagination-container {
+  margin: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pagination-container > p {
+  font-size: 1.3rem;
+}
+
+.pagination-container > button {
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+	cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-page-number {
+  color: chocolate;
+}
+
+.delete-button {
+  width: 100%;
+  background: none;
+  border: none;
+	cursor: pointer;
+}
+
+.options-container {
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap:15rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.options-container span {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.options-container button {
+  font-size: 1rem;
+  border-radius: .6rem;
+  padding: .5rem 1rem;
+  border: 1px #000 solid;
+	cursor: pointer;
+  display: flex;
+  gap: 1rem;
+}
+
+.options-container select {
+  height: 2rem;
+  width: 5rem;
+  border-radius: .6rem;
+  font-size: 1rem;
+  padding-left: .8rem;
+}
+
+.styled-select select {
+  background: #f00;
+}
+
+@media (max-width: 650px) {
+  .options-container {
+    gap: 10rem;
+  }
+}
