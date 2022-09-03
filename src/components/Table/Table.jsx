@@ -29,8 +29,9 @@ const Table = () => {
     };
 
     const handleUserInsertion = () => {
+        const newId = tableData.length !== 0 ? tableData[tableData.length-1].id + 1 : 1;
         const newUser = {
-            id: tableData[tableData.length-1].id + 1,
+            id: newId,
             name: 'Dummy User',
             dateOfBirth: format(new Date(), 'dd-MM-yyyy'),
             hobby: 'lorem ipsum'
